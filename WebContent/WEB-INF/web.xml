@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>Ex01_HelloWorld</display-name>
+  <!-- Starting of Servlet  -->
+  <servlet>
+  	<servlet-name>Hello World</servlet-name>
+  	<servlet-class>ex01.HelloWorld</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>Hello World</servlet-name>
+  <url-pattern>/wellcome</url-pattern>
+  </servlet-mapping>
+  <!-- Ending of Servlet -->
+   <servlet>
+  	<servlet-name>User Name</servlet-name>
+  	<jsp-file>/username.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>User Name</servlet-name>
+  <url-pattern>/input</url-pattern>
+  </servlet-mapping>
+</web-app>
